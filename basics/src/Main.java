@@ -17,30 +17,28 @@ public class Main {
     public static void flipNHeads(int number) {
         int counter = 0;
         int headCount = 0;
-        String face = "heads";
 
         while (true) {
             if (Math.random() < 0.5) {
                 counter++;
                 headCount = 0;
-                face = "tail";
-                System.out.println(face);
+                System.out.println("tail");
             } else {
                 headCount++;
-                if (headCount > number) {
+                if (headCount == number) {
+                    System.out.println("heads");
                     System.out.println("It took " + counter + " flips to flip " + number + " head in a row.");
                     break;
                 } else {
                     counter++;
-                    face = "heads";
-                    System.out.println(face);
+                    System.out.println("heads");
                 }
             }
         }
     }
 
     //Command Line Clock
-    public static void clock(){
+    public static void clock() {
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             public void run() {
@@ -63,10 +61,10 @@ public class Main {
         System.out.println("------------ task 2 -------------");
 
         //Flipping Coins
-        flipNHeads(3);
+        flipNHeads(4);
 
         System.out.println("------------ task 3 -------------");
         //Command Line Clock
-        clock();
+//        clock();
     }
 }
