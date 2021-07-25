@@ -65,6 +65,6 @@ public class Main {
 
         System.out.println("------------ task 3 -------------");
         //Command Line Clock
-//        clock();
+        clock();
     }
 }
