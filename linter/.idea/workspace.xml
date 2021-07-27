@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ddb02766-6c30-4c64-92a2-0ec996c00275" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/dependencies-accessors/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/fileChanges/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1.1/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries-with-intellij-classes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/src/main/java/basiclibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/src/main/java/basiclibrary/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/src/test/java/basiclibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/src/test/java/basiclibrary/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basiclibrary/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basics/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../basics/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basics/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/../basics/.idea/description.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basics/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basics/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basics/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basics/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basics/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basics/.idea/project-template.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basics/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basics/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basics/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basics/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basics/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basics/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basics/untitled104.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../basics/untitled104.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1vu6cRDY99UwNapUMhm1ZEnKGTj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RunManager" selected="Gradle.AppTest.testJsLinter">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linter.App" />
+      <module name="linter.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testJsLinter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;linter.AppTest.testJsLinter&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.AppTest.testJsLinter" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ddb02766-6c30-4c64-92a2-0ec996c00275" name="Default Changelist" comment="" />
+      <created>1627399706167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627399706167</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
