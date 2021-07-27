@@ -1,6 +1,7 @@
 # java-fundamentals
 
-| Lab    | Link                                                                                   |
-| ------ | -------------------------------------------------------------------------------------- |
-| Lab-01 | [Java primitives and control flow](basics/src/Main.java)                               |
-| Lab-02 | [Arrays, for loops, testing](basiclibrary/lib/src/main/java/basiclibrary/Library.java) |
+| Lab    | Link                                                                                                                                                                                                                                                                     |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Lab-01 | [Java primitives and control flow](basics/src/Main.java)                                                                                                                                                                                                                 |
+| Lab-02 | [Arrays, for loops, testing](basiclibrary/lib/src/main/java/basiclibrary/Library.java)                                                                                                                                                                                   |
+| Lab-03 | [Maps and File I/O](basiclibrary/lib/src/main/java/basiclibrary/Library.java) and [linter](linter/app/src/main/java/linter/App.java) and [test1](basiclibrary/lib/src/test/java/basiclibrary/LibraryTest.java) and [test2](linter/app/src/test/java/linter/AppTest.java) |
