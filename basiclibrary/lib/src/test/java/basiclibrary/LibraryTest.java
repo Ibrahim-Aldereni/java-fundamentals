@@ -4,11 +4,64 @@
 package basiclibrary;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
-    @Test void someLibraryMethodReturnsTrue() {
-        Library classUnderTest = new Library();
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
+    @Test
+    public void testWeatherData() {
+        //input:
+        int[][] weeklyMonthTemperatures = {
+                {66, 64, 58, 65, 71, 57, 60},
+                {57, 65, 65, 70, 72, 65, 51},
+                {55, 54, 60, 53, 59, 57, 61},
+                {65, 56, 55, 52, 55, 62, 57}
+        };
+        // output:
+        int[] outArr = {72, 51, 63, 67, 68, 69};
+
+        assertEquals(Arrays.toString(Library.weatherData(weeklyMonthTemperatures)), Arrays.toString(outArr),"this method return high,low and never seen values");
+    }
+
+    @Test public void testTally(){
+        // test 1
+        //input
+        List<String> votes = new ArrayList<>();
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Shrub");
+        votes.add("Hedge");
+        votes.add("Shrub");
+        votes.add("Bush");
+        votes.add("Hedge");
+        votes.add("Bush");
+
+        // output
+        String winner = "Bush";
+
+        assertEquals(Library.tally(votes),winner,"this method return string of the higher votes name");
+
+        // test 2
+        //input
+        List<String> votes2 = new ArrayList<>();
+        votes2.add("Hedge");
+        votes2.add("Hedge");
+        votes2.add("Hedge");
+        votes2.add("Shrub");
+        votes2.add("Hedge");
+        votes2.add("Shrub");
+        votes2.add("Bush");
+        votes2.add("Hedge");
+        votes2.add("Bush");
+
+        // output
+        String winner2 = "Hedge";
+
+        assertEquals(Library.tally(votes2),winner2,"this method return string of the higher votes name");
     }
 }
