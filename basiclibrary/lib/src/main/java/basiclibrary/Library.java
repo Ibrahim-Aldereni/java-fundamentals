@@ -3,9 +3,7 @@
  */
 package basiclibrary;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Library {
     //Rolling Dice
@@ -52,7 +50,7 @@ public class Library {
         int arrOut[] = new int[arr2d[0].length];
 
         for (int[] arr1d : arr2d) {
-            if (calculateAvg(arr1d) < avg ) {
+            if (calculateAvg(arr1d) < avg) {
                 arrOut = arr1d;
             }
             avg = calculateAvg(arr1d);
@@ -60,6 +58,81 @@ public class Library {
 
         return arrOut;
     }
+
+    // lab-03 Analyzing Weather Data
+    public static int[] weatherData(int[][] arr2d) {
+        Set<Integer> allTemp = new HashSet<Integer>();
+
+        // fill all array content in a hashset (to get the unique numbers)
+        for (int[] arr1d : arr2d) {
+            for (int temp : arr1d) {
+                allTemp.add(temp);
+            }
+        }
+
+        //convert the hashset to list so i can use the sort method
+        List<Integer> allTempList = new ArrayList<Integer>(allTemp);
+        Collections.sort(allTempList);
+
+        //loop through all values to find the (not seen temp)
+        List<Integer> uniqueTempList = new ArrayList<Integer>();
+
+        int previousTemp = allTempList.get(0); // get first temp
+        for (Integer currentTemp : allTempList) {
+            if (previousTemp != currentTemp) { // to skip first iteration when 2 temp the same
+                if ((currentTemp - previousTemp) > 1) {
+                    for (int i = 1; i < currentTemp - previousTemp; i++) {
+                        uniqueTempList.add(currentTemp - i);
+                    }
+                }
+                previousTemp = currentTemp;
+            }
+        }
+        Collections.sort(uniqueTempList);
+
+        //output
+        int outArr[] = new int[uniqueTempList.size() + 2];
+        outArr[0] = allTempList.get(allTemp.size() - 1); // high
+        outArr[1] = allTempList.get(0); // low
+
+        for (int i = 2; i < uniqueTempList.size() + 2; i++) { // Never saw temperature
+            outArr[i] = uniqueTempList.get(i - 2);
+        }
+        return outArr;
+    }
+
+    // lab-03 Tallying Election
+    public static String tally(List<String> list) {
+        //convert list to hashset to get unique names
+        Set<String> namesSet = new HashSet<String>(list);
+        // intilize empty hashmap
+        Map<String, Integer> namesVotesMap = new HashMap<String, Integer>();
+        // initialize the map with number (vote number) and the names
+        for (String name : namesSet) {
+            namesVotesMap.put(name, 0);
+        }
+
+        // loop through the list and increase the map key according to the name
+        for (String name : list) {
+            namesVotesMap.entrySet().forEach(entry -> {
+                if (name == entry.getKey()) {
+                    namesVotesMap.put(name, entry.getValue() + 1);
+                }
+            });
+        }
+        // find max value in the map
+        int max = Collections.max(namesVotesMap.values());
+
+        //loop through the map to get the key of the max value
+        String winner = "";
+        for (Map.Entry<String, Integer> entry : namesVotesMap.entrySet()) {
+            if (Objects.equals(max, entry.getValue())) {
+                winner = entry.getKey();
+            }
+        }
+        return winner;
+    }
+
 
     public static void main(String[] args) {
         System.out.println("--------- task 1 ----------");
@@ -85,5 +158,35 @@ public class Library {
                 {65, 56, 55, 52, 55, 62, 57}
         };
         System.out.println(Arrays.toString(arrayOfArrays(weeklyMonthTemperatures)));
+
+        System.out.println("--------- lab-03 - task 1 ----------");
+        // lab-03 Analyzing Weather Data
+        int arr3[] = weatherData(weeklyMonthTemperatures);
+        System.out.println(Arrays.toString(arr3));
+        for (int i = 0; i < arr3.length; i++) {
+            if (i == 0) {
+                System.out.println("High: " + arr3[i]);
+            } else if (i == 1) {
+                System.out.println("Low: " + arr3[i]);
+            } else {
+                System.out.println("Never saw temperature: " + arr3[i]);
+            }
+        }
+
+        System.out.println("--------- lab-03 - task 2 ----------");
+        // lab-03 Tallying Election
+        List<String> votes = new ArrayList<>();
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Shrub");
+        votes.add("Hedge");
+        votes.add("Shrub");
+        votes.add("Bush");
+        votes.add("Hedge");
+        votes.add("Bush");
+
+        String winner = tally(votes);
+        System.out.println(winner + " received the most votes!");
     }
 }
