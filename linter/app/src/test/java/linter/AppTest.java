@@ -52,6 +52,5 @@ class AppTest {
         List<String> outputMessage5 = new ArrayList<String>();
 
         assertEquals(outputMessage5,App.JsLinter(path5),"this method return string with error if semicolon is missing");
-
     }
 }

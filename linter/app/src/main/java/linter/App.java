@@ -22,6 +22,7 @@ public class App {
             while (scanner.hasNextLine()) {
                 lineCounter++;
                 String nextLine = scanner.nextLine();
+
                 if (!nextLine.endsWith(";") && !nextLine.endsWith("{") &&
                 !nextLine.endsWith("}") && !nextLine.contains("else") && !nextLine.contains("if") &&
                 !nextLine.isEmpty()) {
@@ -36,7 +37,7 @@ public class App {
 
     public static void main(String[] args) {
         // JavaScript Linter
-        String path = "resources/empty.js";
+        String path = "resources/few-errors.js";
         for (String s : JsLinter(path)) {
             System.out.println(s);
         }
