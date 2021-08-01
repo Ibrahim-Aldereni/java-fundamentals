@@ -7,8 +7,36 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
-    @Test void someLibraryMethodReturnsTrue() {
-        Library classUnderTest = new Library();
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
+    // 1
+    @Test public void testRestaurantToStringMethod(){
+        // the instance
+        Restaurant res1 = new Restaurant("hashim",5);
+        // output must be :
+        String out =  "Restaurant{name='hashim', stars=0, priceCategory=$$$$$, reviews=[]}";
+
+        assertEquals(out,res1.toString(),"create an instance of Restaurant and ensure that its toString is working properly");
+    }
+
+    // 2
+    @Test public void testReviewToStringMethod(){
+        // the instances
+        Review rev1 = new Review("Ibrahim","nice resturent",5);
+        // output must be :
+        String out =  "Review{author='Ibrahim', body='nice resturent', stars=5}";
+
+        assertEquals(out,rev1.toString(),"create an instance of Review and ensure that its toString is working properly.");
+    }
+
+    // 3
+    @Test public void testAddReviewMethod(){
+        // the instance
+        Restaurant res1 = new Restaurant("hashim",5);
+        Review rev1 = new Review("Ibrahim","nice resturent",5);
+        res1.addReview(rev1);
+        // output must be :
+        String out =  "Restaurant{name='hashim', stars=5, priceCategory=$$$$$, reviews=[Review{author='Ibrahim', body='nice resturent', stars=5}]}";
+
+        assertEquals(out,res1.toString(),"call addReview, the association is created between the Restaurant and the " +
+                "Review");
     }
 }
