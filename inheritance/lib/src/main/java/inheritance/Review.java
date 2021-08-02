@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Review {
+public class Review{
     String author;
     String body;
     int stars;
