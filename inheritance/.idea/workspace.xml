@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70936ee1-7f0b-4706-9c1f-422d5f483437" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/LocationInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/MovieReview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Shop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Theater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../basiclibrary/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gitattributes" afterDir="false" />
@@ -64,6 +58,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
@@ -71,8 +66,13 @@
       <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/inheritance/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/inheritance/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/inheritance/LocationInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/LocationInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/inheritance/MovieReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/MovieReview.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/inheritance/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Restaurant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/inheritance/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/inheritance/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/inheritance/Theater.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/inheritance/Theater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/test/java/inheritance/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/inheritance/LibraryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../linter/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.gitattributes" afterDir="false" />
@@ -167,7 +167,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Gradle.LibraryTest">
+  <component name="RunManager" selected="Application.Library">
     <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="inheritance.Library" />
       <module name="inheritance.lib.main" />

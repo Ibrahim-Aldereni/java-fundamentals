@@ -9,6 +9,8 @@ public class MovieReview extends Review{
 
     @Override
     public String toString() {
-        return "MovieReview{" + "movieSeen='" + movieSeen + '\'' + ", author='" + author + '\'' + ", body='" + body + '\'' + ", stars=" + stars + '}';
+        return "Review{" + "movieSeen='" + movieSeen + '\'' + ", author='" + author + '\'' + ", body='" + body + '\'' + ", stars=" + stars + '}';
     }
 }
+
+

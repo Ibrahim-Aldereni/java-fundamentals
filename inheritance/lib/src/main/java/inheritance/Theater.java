@@ -13,8 +13,6 @@ public class Theater extends Location {
     }
 
     /*
-    --  addReview now have polymorphism, here I have 2 implementations of it, one from the parent with one parameter
-        and the other here with 2 parameters.
     -- You may ask how can I use (MovieReview) instance as parameter when I should use (Review) parameter?
        I did that by making the (MovieReview) extends the (Review), so (MovieReview) is a child of (Review) and the
        default parameter is the parent(Review) so the child can be used as well.
@@ -26,6 +24,7 @@ public class Theater extends Location {
             reviews.add(review);
         }
     }
+
 
     //addMovie and removeMovie
     public void addMovie(String movie){
@@ -41,3 +40,5 @@ public class Theater extends Location {
         return "Theater{" + "name='" + name + '\'' + ", stars=" + stars + ", reviews=" + reviews + ", movies=" + movies + '}';
     }
 }
+
+
