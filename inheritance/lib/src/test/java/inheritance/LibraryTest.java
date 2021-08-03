@@ -7,36 +7,101 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
-    // 1
-    @Test public void testRestaurantToStringMethod(){
-        // the instance
-        Restaurant res1 = new Restaurant("hashim",5);
-        // output must be :
-        String out =  "Restaurant{name='hashim', stars=0, priceCategory=$$$$$, reviews=[]}";
+    /////////////////////////////////////// lab 06 //////////////////////////////////////
+//    // 1
+//    @Test public void testRestaurantToStringMethod(){
+//        // the instance
+//        Restaurant res1 = new Restaurant("hashim",5);
+//        // output must be :
+//        String out =  "Restaurant{name='hashim', stars=0, priceCategory=$$$$$, reviews=[]}";
+//
+//        assertEquals(out,res1.toString(),"create an instance of Restaurant and ensure that its toString is working properly");
+//    }
+//
+//    // 2
+//    @Test public void testReviewToStringMethod(){
+//        // the instances
+//        Review rev1 = new Review("Ibrahim","nice resturent",5);
+//        // output must be :
+//        String out =  "Review{author='Ibrahim', body='nice resturent', stars=5}";
+//
+//        assertEquals(out,rev1.toString(),"create an instance of Review and ensure that its toString is working properly.");
+//    }
+//
+//    // 3
+//    @Test public void testAddReviewMethod(){
+//        // the instance
+//        Restaurant res1 = new Restaurant("hashim",5);
+//        Review rev1 = new Review("Ibrahim","nice resturent",5);
+//        res1.addReview(rev1);
+//        // output must be :
+//        String out =  "Restaurant{name='hashim', stars=5, priceCategory=$$$$$, reviews=[Review{author='Ibrahim', body='nice resturent', stars=5}]}";
+//
+//        assertEquals(out,res1.toString(),"call addReview, the association is created between the Restaurant and the " +
+//                "Review");
+//    }
+    /////////////////////////////////////// lab 07 //////////////////////////////////////
+    // 1 shop class
+    @Test public void testShopToString(){
+        Shop shop1 = new Shop("carefour","grocery and food",5);
+        // output should be
+        String out ="Shop{name='carefour', stars=0.0, dollarSigns=$$$$$, desc='grocery and food', reviews=[]}";
 
-        assertEquals(out,res1.toString(),"create an instance of Restaurant and ensure that its toString is working properly");
+        assertEquals(out,shop1.toString(),"test shop class");
     }
 
-    // 2
-    @Test public void testReviewToStringMethod(){
-        // the instances
-        Review rev1 = new Review("Ibrahim","nice resturent",5);
-        // output must be :
-        String out =  "Review{author='Ibrahim', body='nice resturent', stars=5}";
+    // 2 add review to restaurant and shop
+    @Test public void testShopAndRestaurantReview(){
+        Shop shop1 = new Shop("carefour","grocery and food",5);
+        Restaurant res1 = new Restaurant("abood",2);
 
-        assertEquals(out,rev1.toString(),"create an instance of Review and ensure that its toString is working properly.");
+        Review rev1 = new Review("ahmad","bad",1);
+        Review rev2 = new Review("ibrahim","good",5);
+
+        shop1.addReview(rev1);
+        res1.addReview(rev2);
+        // output should be
+        String shopOut ="Shop{name='carefour', stars=1.0, dollarSigns=$$$$$, desc='grocery and food', reviews=[Review{author='ahmad', body='bad', stars=1}]}";
+        String resOut ="Restaurant{name='abood', stars=5.0, priceCategory=$$, reviews=[Review{author='ibrahim', body='good', stars=5}]}";
+
+        assertEquals(shopOut,shop1.toString(),"test add review to restaurant and shop");
+        assertEquals(resOut,res1.toString(),"test add review to restaurant and shop");
     }
 
-    // 3
-    @Test public void testAddReviewMethod(){
-        // the instance
-        Restaurant res1 = new Restaurant("hashim",5);
-        Review rev1 = new Review("Ibrahim","nice resturent",5);
-        res1.addReview(rev1);
-        // output must be :
-        String out =  "Restaurant{name='hashim', stars=5, priceCategory=$$$$$, reviews=[Review{author='Ibrahim', body='nice resturent', stars=5}]}";
+    // 3 test theater addMovies, removeMovies and toString
+    @Test public void testTheater(){
+        Theater theater1 = new Theater("royal hall");
+        theater1.addMovie("hunger games");
+        theater1.addMovie("divergant");
+        theater1.addMovie("avengers");
+        theater1.removeMovie("divergant");
+        // output should be
+        String out = "Theater{name='royal hall', stars=0.0, reviews=[], movies=[hunger games, avengers]}";
 
-        assertEquals(out,res1.toString(),"call addReview, the association is created between the Restaurant and the " +
-                "Review");
+        assertEquals(out,theater1.toString(),"test theater addMovies, removeMovies and toString");
+    }
+
+    // 4 test theater review
+    @Test public void testTheaterReview(){
+        Theater theater1 = new Theater("royal hall");
+        Review rev1 = new Review("emad","not bad",3);
+        theater1.addReview(rev1);
+        // output should be
+        String out = "Theater{name='royal hall', stars=3.0, reviews=[Review{author='emad', body='not bad', stars=3}], movies=[]}";
+
+        assertEquals(out,theater1.toString(),"test theater review");
+    }
+
+    // 4 test theater review with movie
+    @Test public void testTheaterReviewWithMovie(){
+        Theater theater1 = new Theater("royal hall");
+        Review rev1 = new Review("emad","not bad",3);
+        MovieReview mrev1 = new MovieReview("yazan","good",3,"avangers");
+        theater1.addReview(rev1);
+        theater1.addReview(mrev1);
+        // output should be
+        String out = "Theater{name='royal hall', stars=3.0, reviews=[Review{author='emad', body='not bad', stars=3}, Review{movieSeen='avangers', author='yazan', body='good', stars=3}], movies=[]}";
+
+        assertEquals(out,theater1.toString(),"test theater review with movie");
     }
 }

@@ -12,20 +12,6 @@ public class Theater extends Location {
         this.movies = new ArrayList<String>();
     }
 
-    /*
-    -- You may ask how can I use (MovieReview) instance as parameter when I should use (Review) parameter?
-       I did that by making the (MovieReview) extends the (Review), so (MovieReview) is a child of (Review) and the
-       default parameter is the parent(Review) so the child can be used as well.
-    */
-    public void addReview(MovieReview review ,String movieSeen) {
-        if(!reviews.contains(review)){ // prevent duplicates
-            stars += review.stars;
-            review.movieSeen= movieSeen;
-            reviews.add(review);
-        }
-    }
-
-
     //addMovie and removeMovie
     public void addMovie(String movie){
         movies.add(movie);

@@ -25,51 +25,53 @@ public class Library {
         /////////////////////////////////////// lab 07 //////////////////////////////////////
         // 1 test Shop toString
         Shop shop1 = new Shop("carefour","grocery and food",5);
-        System.out.println(shop1.toString());
+//        System.out.println(shop1.toString());
 
         // 2 review a shop
+        Restaurant res5 = new Restaurant("abood",2);
         Review rev1 = new Review("ahmad","bad",1);
         Review rev2 = new Review("ibrahim","good",5);
 
         shop1.addReview(rev1);
-        shop1.addReview(rev2);
+        res5.addReview(rev2);
 
         System.out.println(shop1.toString());
+        System.out.println(res5.toString());
 
         // 3 test theater addMovies, removeMovies and toString
         Theater theater1 = new Theater("royal hall");
 
-        theater1.addMovie("hunger games");
-        theater1.addMovie("divergant");
-        theater1.addMovie("avengers");
-        System.out.println(theater1.toString());
+//        theater1.addMovie("hunger games");
+//        theater1.addMovie("divergant");
+//        theater1.addMovie("avengers");
+//        System.out.println(theater1.toString());
 
-        theater1.removeMovie("divergant");
-        System.out.println(theater1.toString());
+//        theater1.removeMovie("divergant");
+//        System.out.println(theater1.toString());
 
         // 4 Theater review
         Review rev3 = new Review("emad","not bad",3);
         Review rev4 = new Review("ibrahim","good",5);
 
         theater1.addReview(rev3);
-        theater1.addReview(rev4);
+//        theater1.addReview(rev4);
         System.out.println(theater1.toString());
 
         // 5 add a review that only theater can use
-        Review rev5 = new Review("yazan","good",3);
-        MovieReview rev6 = new MovieReview("yazan","good",3);
+        Review rev5 = new Review("emad","not bad",3);
+        MovieReview mrev6 = new MovieReview("yazan","good",3,"avangers");
 
         theater1.addReview(rev5); // normal review
-        theater1.addReview(rev6,"avangers"); // review with movie
+        theater1.addReview(mrev6); // review with movie
         System.out.println(theater1.toString());
 
-        // test that shop and restaurant can't se movie review
+        // test that shop and restaurant can add review without movie
         Restaurant res2 = new Restaurant("abood",2);
         Shop shop2 = new Shop("krb","mall",4);
 
-        // this method can not be used cuz theater can only implement it
-//        shop2.addReview(rev6,"movie1");
-//        res2.addReview(rev6,"movie2");
-
+        shop2.addReview(rev5);
+        res2.addReview(rev5);
+        System.out.println(shop2.toString());
+        System.out.println(res2.toString());
     }
 }
